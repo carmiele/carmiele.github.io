@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Portfolio",
+    "url": "/work"
+  },
+  {
+    "name": "Resume",
+    "url": "/resume"
+  },
+  {
+    "name": "Contact",
+    "url": "/contact"
+  }
+]

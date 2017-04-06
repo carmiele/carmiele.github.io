@@ -1,14 +1,14 @@
 [
   {
     "name": "Portfolio",
-    "url": "/work"
+    "url": "#work"
   },
   {
     "name": "Resume",
-    "url": "/resume"
+    "url": "#resume"
   },
   {
     "name": "Contact",
-    "url": "/contact"
+    "url": "#contact"
   }
 ]

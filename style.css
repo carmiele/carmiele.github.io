@@ -1,5 +1,5 @@
-.change-my-css {
-  /*overflow: hidden;*/
+#header {
+  background-color: #333333;
 }
 
 .menuBtn {
@@ -16,6 +16,35 @@ md-list .md-button {
   font-weight: 500;
   text-align: left;
   width: 100%;
+}
+
+md-content h1 {
+  color: #00A89C;
+}
+
+.wExp { font-size: 12px; }
+
+.work-title {
+  color: #5866AE;
+  border-bottom: dotted 1px black;
+  font-weight:bold;
+  font-size: 15px;
+}
+
+md-sidenav {
+  background-color: #5866AE;
+}
+
+md-sidenav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  padding: 20px;
+}
+
+md-sidenav a:hover {
+  background-color: #48558C;
 }
 
 /* Using Data-URI converted from svg until <md-icon> becomes available 

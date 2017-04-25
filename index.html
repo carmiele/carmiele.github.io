@@ -8,7 +8,7 @@
 </head>
 
 <body layout="column" ng-controller="AppCtrl">
-  <md-toolbar layout="row">
+  <md-toolbar id="header" layout="row">
     <div class="md-toolbar-tools">
       <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn" aria-label="Toggle Menu">
       </button>
@@ -18,15 +18,11 @@
     </div>
   </md-toolbar>
   
-  <div layout="row" flex class="change-my-css">
+  <div layout-sm="column" layout-gt-sm="row" flex>
     <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
       <md-list>
         <md-list-item ng-repeat="li in list">
-          <div class="md-list-item-text">
-            <div layout="row">
-              <a href="{{li.url}}">{{li.name}}</a>
-            </div>
-          </div>
+          <a href="{{li.url}}">{{li.name}}</a>
         </md-list-item>
       </md-list>
     </md-sidenav>
@@ -36,11 +32,6 @@
     <br/>323-828-4576
     <br/>carmieletan@gmail.com
     </p>
-
-    <style type="text/css">
-      .wExp { font-size: 12px; }
-      .work-title { border-bottom: dotted 1px black;font-weight:bold;font-size: 15px; }
-    </style>
 
     <h1>Work Experience</h1>
     <p class="wExp"><span class="work-title">Web Developer &mdash; USC Laboratory of Neuroimaging (LONI) (May 2015 - now)</span>

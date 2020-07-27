@@ -26,80 +26,118 @@
       </h1>
     </div>
   </md-toolbar>
-  
+
   <div layout-sm="column" layout-gt-sm="row" flex>
-    <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+    <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left"
+      md-is-locked-open="$mdMedia('gt-sm')">
       <md-list>
         <md-list-item ng-repeat="li in list">
           <a href="{{li.url}}">{{li.name}}</a>
         </md-list-item>
       </md-list>
     </md-sidenav>
-  <md-content layout="column" id="content" flex class="md-padding">
-    <h1 id="contact">Contact Me:</h1>
-    <p><img src="logo.png" style="width:25%;max-width:100px;display:block;float:left;">
-    <span style="display:block;float:left; margin-left: 20px;margin-top: 10px;">Carmen Tan
-    <br/>323-828-4576
-    <br/>carmieletan@gmail.com</span>
-    </p>
-
-    <h1 id="resume">Work Experience</h1>
-    <p class="wExp"><span class="work-title">Financial Blockchain Operations Engineer &mdash; IBM (July 2018 - now)</span>
+    <md-content layout="column" id="content" flex class="md-padding">
+      <h1 id="contact">Contact Me:</h1>
+      <p><img src="logo.png" style="width:25%;max-width:100px;display:block;float:left;">
+        <span style="display:block;float:left; margin-left: 20px;margin-top: 10px;">Carmen Tan
+          <br />323-828-4576
+          <br />carmieletan@gmail.com</span>
       </p>
 
-    <p class="wExp"><span class="work-title">Software Engineer &mdash; MFour Mobile Research (May 2017 - June 2018)</span>
-      <br/>&mdash; Collaborated with Product, Marketing, and UX/UI Design teams, engineering leads, and main stakeholders to improve/create new features for our 2 primary internal web
-      <br/>&mdash; Built API endpoints for our web apps and our Survey On The GoTM mobile app
-      <br/>&mdash; Created scripts in Perl and Python for microservices used to automate database processes, application notifications, processing panelist payments, etc.
-      <br/>&mdash; Created and optimized user interfaces for our applications using Bootstrap, SASS, and React-based views (for particularly data-heavy UIs)
-      <br/>&mdash; Used build tools and dependency managers Composer, NPM, webpack, and gulp to process and compile production-ready code
-      <br/>&mdash; Tested features using PHPUnit, pytest, and Jest before live deployment
-      <br/>&mdash; Practiced agile methodologies: 2 week sprints, peer code reviews, daily standups
+      <h1 id="resume">Work Experience</h1>
+      <p class="wExp"><span class="work-title">Financial Blockchain Operations Engineer &mdash; IBM (July 2018 -
+          now)</span>
+        <br />&mdash; Led frontend development effort for IBM World Wire and participated in
+        frontend development for IBM Food Trust. Created production-grade
+        internationalized UI components in Angular 2+, unit test scaffolding,
+        Redux stores, and data visualizations in D3.js
+        <br />&mdash; Maintained microservices written in Node/Go for the World Wire API. Built out
+        authentication middleware to faciliate secure communication between the
+        API and the admin/client UIs and enforce financial compliance policies
+        <br />&mdash; Primary enterprise UX/UI designer for IBM World Wire. Devised the main
+        style guide for World Wire based on IBM Design Language and led the
+        major design upgrade for accessibility and international usability
+        <br />&mdash; Contributed design patterns and developed new components for Carbon
+        Design, IBM’s open-source design system for products and experiences,
+        with support for multiple UI frameworks (React, Angular 2+, Vue, Vanilla JS)
+        <br />&mdash; Acted as developer/design liason to improve communication between
+        product and development teams for both IBM World Wire and IBM Food
+        Trust. Collaborated with Market Development and Offering Managers to
+        gather business requirements, conduct user interviews, and design user
+        flows/use cases to be translated as technical requirements.
+        <br />&mdash; Facilitated onboarding sessions for clients in various countries by
+        conducting demos and providing technical solution integrations
       </p>
 
-    <p class="wExp"><span class="work-title">Web Developer &mdash; USC Laboratory of Neuroimaging (LONI) (May 2015 - May 2017)</span>
-	<br/>&mdash; Designed and implemented custom Wordpress themes and plugins for static sites, as well as integrated third party APIs (Google Drive, Youtube, etc.)
-	<br/>&mdash; Built API endpoints in PHP and Golang for managing academic publication data and user profile data across many different sites of the Institute
-	<br/>&mdash; Built cross-browser (IE9+) and responsive user interfaces in React or Bootstrap 3
-	<br/>&mdash; Created user-interactive visualizations for biomedical using D3.js, React, threeJS
-	<br/>&mdash; Utilized Docker and Vagrant to create containers for local development of each of our sites, and easy packaging of dependencies for staging and production
-	<br/>&mdash; Mentored student developers/interns and led a small project team of 5 in technical design and main feature development, database schema design, following proper development processes, and deployment in 2 major launches (internal and public)
-    </p>
-    <p class="wExp"><span class="work-title">Lead Student Web Developer &mdash; USC Trojan Events (Aug 2013 - May 2016) </span>
-    <br/>&mdash; Created new controllers and data models for the main internal application based on CodeIgniter to manage schedules and shifts, view shift data of employees
-	<br/>&mdash; Performed routine maintenance, including bugfixes and server configurations
-	<br/>&mdash; updated front-end components in Bootstrap and JQuery used by payroll coordinators and shift managers to create budgetary allocations, schedule employees, and gather shift reports
-     </p>
-    <p class="wExp"><span class="work-title">Developer Intern  &mdash; Songabout.FM (July 2014 - August 2014)</span>
-     <br/>&mdash; Integrated 3rd party music data APIs for a custom lyric e-library application
-     <br/>&mdash; Developed functionality for multi-user interaction, library management, display and interaction with song lyrics and media from youtube, soundcloud, etc.
-     </p>
-    <p class="wExp"><span class="work-title">Webmaster  &mdash;  USC Trojan Marching Band (August 2012 - Dec 2015)</span>
-    <br/>&mdash; Designed graphical assets, created static responsive web pages, custom PHP forms for the main marching band website
-    </p>
-    <p class="wExp"><span class="work-title">Freelance Web Designer/Developer (from September 2010)</span>
-     <br/>&mdash; Built custom websites and web applications tailored to client needs, including: a small business ecommerce site, internal social networking application for USC Cinema students, personal portfolio sites, etc.
-     </p>
-  </md-content>
-  <md-content id="work" layout="column" id="content" flex class="md-padding">
-    <h1>Portfolio</h1>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg3.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg1.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg2.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg16.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg4.jpg"></a>
-    <!--<a><img class="fancybox" width="100%" src="portfolio/porfolioImg5.jpg"></a>
+      <p class="wExp"><span class="work-title">Software Engineer &mdash; MFour Mobile Research (May 2017 - June
+          2018)</span>
+        <br />&mdash; Built API endpoints, data models, MySQL queries to be consumed by
+        internal web applications and our “Surveys On The Go” mobile application
+        <br />&mdash; Optimized the loading of consumer demographic data for research admin
+        tools, including a kanban-style filtering workflow for creating market re
+        search groups, by replacing traditional UI interfaces with React components
+        that interface with ElasticSearch and Redis for request caching
+        <br />&mdash; Collaborated with Product and Marketing to wireframe and design UI
+        mockups and workflows for admin tools
+        <br />&mdash; Maintained CRON jobs in Perl and Python for application and data cleanup
+      </p>
+
+      <p class="wExp"><span class="work-title">Web Developer &mdash; USC Laboratory of Neuroimaging (LONI) (May 2015 -
+          May 2017)</span>
+        <br />&mdash; Designed and implemented custom Wordpress themes and plugins for static sites, as well as
+        integrated third party APIs (Google Drive, Youtube, etc.)
+        <br />&mdash; Built API endpoints in PHP and Golang for managing academic publication data and user profile data
+        across many different sites of the Institute
+        <br />&mdash; Built cross-browser (IE9+) and responsive user interfaces in React or Bootstrap 3
+        <br />&mdash; Created user-interactive visualizations for biomedical using D3.js, React, threeJS
+        <br />&mdash; Utilized Docker and Vagrant to create containers for local development of each of our sites, and
+        easy packaging of dependencies for staging and production
+        <br />&mdash; Mentored student developers/interns and led a small project team of 5 in technical design and main
+        feature development, database schema design, following proper development processes, and deployment in 2 major
+        launches (internal and public)
+      </p>
+      <p class="wExp"><span class="work-title">Student Web Developer &mdash; USC Trojan Events (Aug 2013 - May
+          2016) </span>
+        <br />&mdash; Created new controllers and data models for the main internal application based on CodeIgniter to
+        manage schedules and shifts, view shift data of employees
+        <br />&mdash; Performed routine maintenance, including bugfixes and server configurations
+        <br />&mdash; updated front-end components in Bootstrap and JQuery used by payroll coordinators and shift
+        managers to create budgetary allocations, schedule employees, and gather shift reports
+      </p>
+      <p class="wExp"><span class="work-title">Developer Intern &mdash; Songabout.FM (July 2014 - August 2014)</span>
+        <br />&mdash; Integrated 3rd party music data APIs for a custom lyric e-library application
+        <br />&mdash; Developed functionality for multi-user interaction, library management, display and interaction
+        with song lyrics and media from youtube, soundcloud, etc.
+      </p>
+      <p class="wExp"><span class="work-title">Webmaster &mdash; USC Trojan Marching Band (August 2012 - Dec
+          2015)</span>
+        <br />&mdash; Designed graphical assets, created static responsive web pages, custom PHP forms for the main
+        marching band website
+      </p>
+      <p class="wExp"><span class="work-title">Freelance Web Designer/Developer (from September 2010)</span>
+        <br />&mdash; Built custom websites and web applications tailored to client needs, including: a small business
+        ecommerce site, internal social networking application for USC Cinema students, personal portfolio sites, etc.
+      </p>
+    </md-content>
+    <md-content id="work" layout="column" id="content" flex class="md-padding">
+      <h1>Portfolio</h1>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg3.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg1.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg2.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg16.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg4.jpg"></a>
+      <!--<a><img class="fancybox" width="100%" src="portfolio/porfolioImg5.jpg"></a>
     <a><img class="fancybox" width="100%" src="portfolio/porfolioImg6.jpg"></a>
     <a><img class="fancybox" width="100%" src="portfolio/porfolioImg7.jpg"></a>-->
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg9.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg10.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg11.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg12.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg8.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg13.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg14.jpg"></a>
-    <a><img class="fancybox" width="100%" src="portfolio/porfolioImg15.jpg"></a>
-    <!--  <p ng-repeat="x in [1,2,3,4,5,6,7,8,9,0]">Test {{x}}</p>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg9.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg10.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg11.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg12.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg8.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg13.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg14.jpg"></a>
+      <a><img class="fancybox" width="100%" src="portfolio/porfolioImg15.jpg"></a>
+      <!--  <p ng-repeat="x in [1,2,3,4,5,6,7,8,9,0]">Test {{x}}</p>
       <p ng-repeat="x in [1,2,3,4,5,6,7,8,9,0]">Test {{x}}</p>
       <p ng-repeat="x in [1,2,3,4,5,6,7,8,9,0]">Test {{x}}</p>
       <p ng-repeat="x in [1,2,3,4,5,6,7,8,9,0]">Test {{x}}</p>
@@ -109,7 +147,7 @@
       <p ng-repeat="x in [1,2,3,4,5,6,7,8,9,0]">Test {{x}}</p>-->
     </md-content>
   </div>
-      
+
   <!-- Angular Material Dependencies -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
@@ -122,4 +160,3 @@
 </body>
 
 </html>
-
